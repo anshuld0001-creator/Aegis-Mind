@@ -1,4 +1,5 @@
-# AEGIS MIND
+# AEGIS MIND 
+🧠 AI-Based Risk Prediction
 
 **Predictive Welfare Intelligence for Those Who Serve.**
 
@@ -297,3 +298,79 @@ explicitly non-diagnostic reference band (see `heart_rate_band()` in
    try the camera-based pulse estimate.
 7. As `officer1` or `admin1`, open **Mitra Escalations** to see any
    consultant requests raised above.
+
+
+🔄 System Workflow
+
+        PERSONNEL
+            │
+            ▼
+     Data Collection
+            │
+            ▼
+     Data Processing
+            │
+            ▼
+       AI / ML Model
+            │
+            ▼
+      Risk Prediction
+            │
+            ▼
+    Explainable Factors
+            │
+            ▼
+     Early-Warning Alert
+            │
+            ▼
+      Human Support
+            │
+            ▼
+       Trend Monitoring
+
+
+       🏗️ Architecture
+
+
+       ┌─────────────────────┐
+│     Personnel       │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│  React Frontend     │
+│  Web Dashboard      │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│   Backend API       │
+│ FastAPI / Django    │
+└──────────┬──────────┘
+           │
+     ┌─────┴─────┐
+     ▼           ▼
+┌──────────┐ ┌─────────────┐
+│PostgreSQL│ │ AI/ML Model │
+│ Database │ │   Python    │
+└──────────┘ └──────┬──────┘
+                    │
+                    ▼
+             Risk Prediction
+                    │
+                    ▼
+              Alert System
+
+
+              🔮 Future Scope
+
+Possible future enhancements include:
+
+📱 Mobile application
+⌚ Wearable/device integration where appropriate
+🎙️ Voice-based wellbeing check-ins
+🌐 Multilingual interface
+🧠 Advanced Explainable AI
+📊 Advanced trend analytics
+🔗 Integration with authorized welfare systems
+⚡ Offline/edge inference for low-connectivity environments
