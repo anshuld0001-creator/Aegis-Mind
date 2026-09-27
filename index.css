@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: #F6F5F1;
+  color: #0E1B2C;
+}
+
+.font-mono-data {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+::selection {
+  background-color: #0E8C7F;
+  color: white;
+}

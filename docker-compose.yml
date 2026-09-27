@@ -1,0 +1,47 @@
+version: "3.9"
+
+# AEGIS MIND — docker-compose for the full-stack prototype.
+# Ships with SQLite by default (zero extra services). Uncomment the `db`
+# service and set DATABASE_URL in backend/.env to run against PostgreSQL
+# instead, matching the production-style architecture in the problem brief.
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    volumes:
+      - backend_data:/app
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8000
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # db:
+  #   image: postgres:16-alpine
+  #   environment:
+  #     POSTGRES_USER: aegis
+  #     POSTGRES_PASSWORD: aegis
+  #     POSTGRES_DB: aegis_mind
+  #   ports:
+  #     - "5432:5432"
+  #   volumes:
+  #     - pg_data:/var/lib/postgresql/data
+
+  # redis:
+  #   image: redis:7-alpine
+  #   ports:
+  #     - "6379:6379"
+
+volumes:
+  backend_data:
+  # pg_data:

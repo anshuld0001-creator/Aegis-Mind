@@ -1,0 +1,35 @@
+{
+  "note": "PROTOTYPE / SIMULATED RESULTS on synthetic data. Not a real-world accuracy claim.",
+  "accuracy": 0.875,
+  "precision": 0.5714,
+  "recall": 0.25,
+  "f1_score": 0.3478,
+  "confusion_matrix": [
+    [
+      202,
+      6
+    ],
+    [
+      24,
+      8
+    ]
+  ],
+  "n_train": 960,
+  "n_test": 240,
+  "false_positive_rate": 0.0288,
+  "false_negative_rate": 0.75,
+  "feature_importance": {
+    "deployment_months_last_year": 0.1164,
+    "weekly_duty_hours": 0.1064,
+    "mood": 0.099,
+    "transfer_count_last_2yr": 0.0971,
+    "night_shift_ratio": 0.0912,
+    "leave_days_last_90": 0.0837,
+    "stress_level": 0.0792,
+    "fatigue_level": 0.0712,
+    "sleep_quality": 0.0698,
+    "training_load_hours": 0.0624,
+    "consecutive_duty_days": 0.0618,
+    "perceived_workload": 0.0618
+  }
+}

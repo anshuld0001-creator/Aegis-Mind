@@ -1,0 +1,14 @@
+[
+  "weekly_duty_hours",
+  "consecutive_duty_days",
+  "leave_days_last_90",
+  "night_shift_ratio",
+  "deployment_months_last_year",
+  "transfer_count_last_2yr",
+  "training_load_hours",
+  "stress_level",
+  "mood",
+  "sleep_quality",
+  "fatigue_level",
+  "perceived_workload"
+]
